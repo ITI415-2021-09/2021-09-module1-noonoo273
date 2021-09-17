@@ -10,6 +10,7 @@ public class AppleTree : MonoBehaviour
     public float leftAndRightEdge = 10f;
     public float chanceToChangeDirections = 0.1f;
     public float secondsBetweenAppleDrops = 1f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class AppleTree : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x += speed * Time.deltaTime;
         transform.position = pos;
+
         // Changing Directions
         if (pos.x < -leftAndRightEdge)
         {
