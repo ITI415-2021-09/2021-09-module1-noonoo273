@@ -11,6 +11,7 @@ public class AppleTree : MonoBehaviour
     public float chanceToChangeDirections = 0.1f;
     public float secondsBetweenAppleDrops = 1f;
 
+    transform.position.x += speed* Time.deltaTime;
     // Start is called before the first frame update
     void Start()
     // Dropping apples every second
