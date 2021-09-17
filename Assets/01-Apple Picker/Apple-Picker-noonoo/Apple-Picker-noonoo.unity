@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 2747700344225338834, guid: cfb36e148875eae459854842e9636cf2, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2747700344225338835, guid: cfb36e148875eae459854842e9636cf2, type: 3}
       propertyPath: m_RootOrder
       value: 2
