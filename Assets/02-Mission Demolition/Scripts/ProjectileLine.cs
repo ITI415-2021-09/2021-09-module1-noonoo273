@@ -99,6 +99,7 @@ public class ProjectileLine : MonoBehaviour
                 {
                     poi = FollowCam.POI;
                 }
+                else { return; }
             } else
             {
                 return;
