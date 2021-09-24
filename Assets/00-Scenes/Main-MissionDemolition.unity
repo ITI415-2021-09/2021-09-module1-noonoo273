@@ -1542,6 +1542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 3008684492891296921, guid: 465b306f3678ef94bb8f08baa3190b7f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3008684492891296922, guid: 465b306f3678ef94bb8f08baa3190b7f, type: 3}
       propertyPath: m_RootOrder
       value: 0
