@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00-Scenes/SceneMain.unity
     guid: afc5006038216427399d86bb793f42d6
-  - enabled: 1
+  - enabled: 0
     path: Assets/00-Scenes/Main-ApplePicker.unity
     guid: a76078966e5564d698c1ed755489041f
   - enabled: 1
     path: Assets/00-Scenes/Main-MissionDemolition.unity
     guid: 36a4f7af764a74bfab5a5ff20375bcdb
-  - enabled: 1
+  - enabled: 0
     path: Assets/00-Scenes/Main-Prototype 1.unity
     guid: 84930580229bb4f138179e160aab9b89
-  - enabled: 1
+  - enabled: 0
     path: Assets/01-Apple Picker/Apple-Picker-noonoo/Apple-Picker-noonoo.unity
     guid: caba8eed2f9bf584297566bd79f701c2
   m_configObjects: {}
