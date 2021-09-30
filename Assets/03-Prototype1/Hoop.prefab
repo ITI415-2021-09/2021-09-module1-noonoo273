@@ -111,4 +111,4 @@ MonoBehaviour:
   speed: 1
   leftAndRightEdge: 10
   chanceToChangeDirections: 0.1
-  secondsBetweenAppleDrops: 1
+  secondsBetweenAppleDrops: 4
