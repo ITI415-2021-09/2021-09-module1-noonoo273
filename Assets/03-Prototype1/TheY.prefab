@@ -253,9 +253,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8538331821789759684}
   - component: {fileID: 8538331821789759685}
-  - component: {fileID: 8538331821789759682}
+  - component: {fileID: 4865461586864337306}
   m_Layer: 0
-  m_Name: Slingshot
+  m_Name: TheY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,7 +292,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 4, z: 0}
---- !u!114 &8538331821789759682
+--- !u!114 &4865461586864337306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,15 +301,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8538331821789759687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81dad6418d4e404884f67a1de0b1db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 692bdf05db94e534faf618af706b55c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabProjectile: {fileID: 8062710588301097687, guid: 1a0bcef4cb75fd44298c40e8448405bc, type: 3}
-  velocityMult: 8
-  launchPoint: {fileID: 8062710588301097687, guid: 1a0bcef4cb75fd44298c40e8448405bc, type: 3}
-  launchPos: {x: 0, y: 0, z: 0}
-  projectile: {fileID: 8062710588301097687, guid: 1a0bcef4cb75fd44298c40e8448405bc, type: 3}
-  aimingMode: 0
 --- !u!1 &8538331822545808302
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4656241612801921638}
   - component: {fileID: 4656241612801921637}
   - component: {fileID: 4656241612801921641}
+  - component: {fileID: 908366380478484101}
   m_Layer: 0
   m_Name: Hoop
   m_TagString: Untagged
@@ -112,3 +113,19 @@ MonoBehaviour:
   leftAndRightEdge: 10
   chanceToChangeDirections: 0.1
   secondsBetweenAppleDrops: 4
+--- !u!54 &908366380478484101
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656241612801921636}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
