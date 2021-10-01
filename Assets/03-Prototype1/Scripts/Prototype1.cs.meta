@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9194f75f61b8ca14d9ee53a03527a799
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - uitLevel: {instanceID: 0}
+  - uitShots: {instanceID: 0}
+  - uitButton: {instanceID: 0}
+  - hoop: {fileID: 4656241612801921636, guid: ff58c196853818b489aae7c887b741d4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
