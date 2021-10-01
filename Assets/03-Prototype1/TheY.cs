@@ -85,11 +85,8 @@ public class TheY : MonoBehaviour
             aimingMode = false;
             projectileRigidbody.isKinematic = false;
             projectileRigidbody.velocity = mouseDelta * velocityMult;
-            FollowCam.POI = Ball;
+            _Main_Camera.POI = Ball;
             Ball = null;
-
-            MissionDemolition.ShotFired();
-            ProjectileLine.S.poi = Ball;
         }
     }
 }
