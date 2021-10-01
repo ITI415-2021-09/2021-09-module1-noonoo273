@@ -15,7 +15,7 @@ public class Prototype1 : MonoBehaviour
 
     [Header("Set in Inspector")]
     public Text uitLevel;
-    public Text uitShots;
+    public Text uitLives;
     public Text uitButton;
     public Vector3 hoopPos;
     public GameObject[] hoops;
@@ -23,7 +23,7 @@ public class Prototype1 : MonoBehaviour
     [Header("Set Dynamically")]
     public int level;
     public int levelMax;
-    public int shotsTaken;
+    public int Lives = 3;
     public GameObject hoop;
     public GameModeP1 mode = GameModeP1.idle;
     public string showing = "Show Slingshot";
@@ -39,21 +39,25 @@ public class Prototype1 : MonoBehaviour
 
     void StartLevel()
     {
+        // Get rid of old hoop if one exists
         if (hoop != null)
         {
             Destroy(hoop);
         }
 
+        //Destroy old projectiles if they exist
         GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
         foreach (GameObject pTemp in gos)
         {
             Destroy(pTemp);
         }
 
+        //Instantiate new Hoop
         hoop = Instantiate<GameObject>(hoops[level]);
         hoop.transform.position = hoopPos;
-        shotsTaken = 0;
+        Lives = 3;
 
+        SwitchView("Show Both");
         ProjectileLine.S.Clear();
 
         Goal.goalMet = false;
@@ -65,7 +69,7 @@ public class Prototype1 : MonoBehaviour
     void UpdateGUI()
     {
         uitLevel.text = "Level: " + (level + 1) + " of " + levelMax;
-        uitShots.text = "Shots Taken: " + shotsTaken;
+        uitLives.text = "Lives: " + Lives;
     }
     // Update is called once per frame
     void Update()
@@ -89,10 +93,21 @@ public class Prototype1 : MonoBehaviour
         StartLevel();
     }
 
+    public void SwitchView(string eView = "")
+    {
+        if (eView == "")
+        {
+            eView = uitButton.text;
+        }
+
+        showing = eView;
+
+    }
+
 
     public static void ShotFired()
     {
-        S.shotsTaken++;
+        S.Lives--;
     }
 
 }
