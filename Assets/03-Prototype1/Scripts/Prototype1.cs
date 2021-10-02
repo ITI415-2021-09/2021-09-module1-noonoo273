@@ -17,8 +17,10 @@ public class Prototype1 : MonoBehaviour
     public Text uitLevel;
     public Text uitLives;
     public Text uitButton;
-    public Vector3 hoopPos;
+    //public Vector3 hoopPos;
     public GameObject[] hoops;
+    public GameObject winTextObject;
+    public GameObject loseTextObject;
 
     [Header("Set Dynamically")]
     public int level;
@@ -34,37 +36,39 @@ public class Prototype1 : MonoBehaviour
         S = this;
         level = 0;
         levelMax = hoops.Length;
-        StartLevel();
+        //StartLevel();
+        winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
     }
 
-    void StartLevel()
-    {
-        // Get rid of old hoop if one exists
-        if (hoop != null)
-        {
-            Destroy(hoop);
-        }
+    //void StartLevel()
+    //{
+    //    // Get rid of old hoop if one exists
+    //    if (hoop != null)
+    //    {
+    //        DestroyImmediate(hoop, true);
+    //    }
 
-        //Destroy old projectiles if they exist
-        GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
-        foreach (GameObject pTemp in gos)
-        {
-            Destroy(pTemp);
-        }
+    //    //Destroy old projectiles if they exist
+    //    GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
+    //    foreach (GameObject pTemp in gos)
+    //    {
+    //        Destroy(pTemp);
+    //    }
 
-        //Instantiate new Hoop
-        hoop = Instantiate<GameObject>(hoops[level]);
-        hoop.transform.position = hoopPos;
-        Lives = 3;
+    //    //Instantiate new Hoop
+    //    hoop = Instantiate<GameObject>(hoops[level]);
+    //    //hoop.transform.position = hoopPos;
+    //    Lives = 3;
 
-        SwitchView("Show Both");
-        ProjectileLine.S.Clear();
+    //    SwitchView("Show Both");
+    //    ProjectileLine.S.Clear();
 
-        Goal.goalMet = false;
+    //    Goal.goalMet = false;
 
-        UpdateGUI();
-        mode = GameModeP1.playing;
-    }
+    //    UpdateGUI();
+    //    mode = GameModeP1.playing;
+    //}
 
     void UpdateGUI()
     {
@@ -80,6 +84,7 @@ public class Prototype1 : MonoBehaviour
         {
             mode = GameModeP1.levelEnd;
             Invoke("NextLevel", 2f);
+            winTextObject.SetActive(true);
         }
     }
 
@@ -90,7 +95,7 @@ public class Prototype1 : MonoBehaviour
         {
             level = 0;
         }
-        StartLevel();
+        //StartLevel();
     }
 
     public void SwitchView(string eView = "")

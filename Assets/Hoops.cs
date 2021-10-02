@@ -8,6 +8,7 @@ public class Hoops : MonoBehaviour
     public float leftAndRightEdge = 10f;
     public float chanceToChangeDirections = 0.1f;
     public float secondsBetweenAppleDrops = 1f;
+    public GameObject winTextObject;
 
     void Update()
     {
@@ -33,6 +34,12 @@ public class Hoops : MonoBehaviour
         if (Random.value < chanceToChangeDirections)
         {
             speed *= -1; //Change Directions
+        }
+
+        if (Goal.goalMet)
+        {
+            winTextObject.SetActive(true);
+            Application.Quit();
         }
     }
 }
