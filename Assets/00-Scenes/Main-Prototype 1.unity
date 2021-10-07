@@ -1518,7 +1518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656241612801921641, guid: ff58c196853818b489aae7c887b741d4, type: 3}
       propertyPath: speed
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4656241612801921641, guid: ff58c196853818b489aae7c887b741d4, type: 3}
       propertyPath: winTextObject
