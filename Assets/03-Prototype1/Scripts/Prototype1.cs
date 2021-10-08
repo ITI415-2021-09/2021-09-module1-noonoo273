@@ -21,6 +21,7 @@ public class Prototype1 : MonoBehaviour
     public GameObject[] hoops;
     public GameObject winTextObject;
     public GameObject loseTextObject;
+    public List<GameObject> ballList;
 
     [Header("Set Dynamically")]
     public int level;

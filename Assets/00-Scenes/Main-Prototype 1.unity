@@ -646,6 +646,7 @@ MonoBehaviour:
   hoops: []
   winTextObject: {fileID: 883791412}
   loseTextObject: {fileID: 1901901544}
+  ballList: []
   level: 0
   levelMax: 0
   Lives: 3
@@ -1456,6 +1457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 908366380478484101, guid: ff58c196853818b489aae7c887b741d4, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 908366380478484101, guid: ff58c196853818b489aae7c887b741d4, type: 3}
       propertyPath: m_CollisionDetection
       value: 3

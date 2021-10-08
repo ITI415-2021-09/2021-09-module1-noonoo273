@@ -47,4 +47,9 @@ public class Hoops : MonoBehaviour
             Application.Quit();
         }
     }
+
+    void OnCollionEnter(Collision coll)
+    {
+        Destroy(gameObject);
+    }
 }
