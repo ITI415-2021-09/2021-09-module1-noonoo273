@@ -54,6 +54,7 @@ public class TheY : MonoBehaviour
     {
         aimingMode = true;
         Ball = Instantiate(prefabBall) as GameObject;
+        Prototype1.ShotFired();
         Ball.transform.position = launchPos;
         Ball.GetComponent<Rigidbody>().isKinematic = true;
 

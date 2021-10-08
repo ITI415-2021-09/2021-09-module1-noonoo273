@@ -74,7 +74,7 @@ public class Prototype1 : MonoBehaviour
     void UpdateGUI()
     {
         uitLevel.text = "Level: " + (level + 1) + " of " + levelMax;
-        uitLives.text = "Lives: " + Lives;
+        uitLives.text = "Shots Taken: " + S.Lives;
     }
     // Update is called once per frame
     void Update()
@@ -86,6 +86,11 @@ public class Prototype1 : MonoBehaviour
             mode = GameModeP1.levelEnd;
             Invoke("NextLevel", 2f);
             winTextObject.SetActive(true);
+        }
+        
+        if (S.Lives < 1)
+        {
+            loseTextObject.SetActive(true);
         }
     }
 
